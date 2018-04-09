@@ -23,7 +23,6 @@ namespace TeduShop.Model.Models
         public string Facebook { set; get; }
 
         [Required]
-        [MaxLength(10)]
         public bool Status { set; get; }
     }
 }

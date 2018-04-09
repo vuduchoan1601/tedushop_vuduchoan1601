@@ -29,7 +29,6 @@ namespace TeduShop.Model.Models
         public int? DisplayOrder { set; get; }
 
         [Required]
-        [MaxLength(10)]
         public bool Status { set; get; }
     }
 }
