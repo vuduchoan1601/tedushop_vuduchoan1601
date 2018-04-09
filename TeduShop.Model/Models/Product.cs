@@ -24,12 +24,12 @@ namespace TeduShop.Model
         public string Alias { set; get; }
 
         [Required]
-        [MaxLength(250)]
         public int CategoryID { set; get; }
 
         public string Image { set; get; }
 
-        public XElement MoreImage { set; get; }
+        [Column(TypeName = "xml")]
+        public string MoreImage { set; get; }
 
         public decimal Price { set; get; }
 

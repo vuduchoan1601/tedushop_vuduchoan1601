@@ -12,7 +12,6 @@ namespace TeduShop.Model.Models
         public int ID { set; get; }
 
         [Required]
-        [MaxLength(250)]
         public DateTime VisitedDate { set; get; }
 
         [Required]

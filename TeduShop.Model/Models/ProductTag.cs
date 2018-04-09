@@ -7,13 +7,14 @@ namespace TeduShop.Model.Models
     public class ProductTag
     {
         [Key]
+        [Column(Order = 1)]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ProductID { set; get; }
 
         [Key]
         [Required]
         [MaxLength(10)]
-        [Column(TypeName ="varchar")]
+        [Column(TypeName ="varchar", Order = 2)]
         public string TagID { set; get; }
     }
 }

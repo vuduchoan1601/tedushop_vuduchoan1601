@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TeduShop.Model.Models
 {
-    [Table("SupportOnlines)]
+    [Table("SupportOnlines")]
     public class SupportOnline
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { set; get; }
 
         public string Name { set; get; }
@@ -23,7 +23,6 @@ namespace TeduShop.Model.Models
         public string Facebook { set; get; }
 
         [Required]
-        [MaxLength(10)]
         public bool Status { set; get; }
     }
 }
