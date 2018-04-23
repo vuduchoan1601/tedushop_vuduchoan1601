@@ -17,7 +17,7 @@ namespace TeduShop.UnitTest.RepositoryTest
         {
             dbFactory = new DbFactory();
             objRepository = new PostCategoryRepository(dbFactory);
-            unitOfWork = new UnitOfWord(dbFactory);
+            unitOfWork = new UnitOfWork(dbFactory);
         }
 
         [TestMethod]
